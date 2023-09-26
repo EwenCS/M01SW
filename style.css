@@ -1,5 +1,5 @@
-sélecteur  {
-    propriété: valeur;
-
+body {
+    border: 20px solid rgb(0, 161, 94);
+    background-color:  #ffffff;
 }
 
