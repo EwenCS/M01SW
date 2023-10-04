@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     
     <link rel="stylesheet" href="style.css"/>
     <title>Présentation des journaux luminaux</title>
@@ -9,22 +9,56 @@
 <body>
     <section id="message">
         <form>
-            <label>Sélectionner un afficheur :</label>
-            <select>
-                <option>CP A</option>
-                <option>CP B</option>
-                <option>CE1 A</option>
-                <option>CE1 B</option>
-                <option>CE2 A</option>
-                <option>CE2 B</option>
-                <option>CM1 A</option>
-                <option>CM1 B</option>
-                <option>CM2 A</option>
-                <option>CM2 A</option>
+            <label for="fname">Sélectionner un afficheur :</label>
+            <select name="afficheur">
+                <option value="172.20.21.230">CP A</option>
+                <option value="172.20.21.231">CP B</option>
+                <option value="172.20.21.232">CE1 A</option>
+                <option value="172.20.21.233">CE1 B</option>
+                <option value="172.20.21.234">CE2 A</option>
+                <option value="172.20.21.235">CE2 B</option>
+                <option value="172.20.21.236">CM1 A</option>
+                <option value="172.20.21.237">CM1 B</option>
+                <option value="172.20.21.238">CM2 A</option>
+                <option value="172.20.21.239">CM2 B</option>
+
+            
             </select>
-           <label>Indiquer le message:</label>
-           <input type="Text" name="message"> 
-            <input type="submit" name="Envoyer">
+           <label for="lname">indiquer le message :</label>
+           <input type="Text" id="lname" name="lname" value=""> 
+
+           <label for="lname">Effet de l'apparation:</label>
+           <select id="select-effetappartion" name="effetappartion">
+                <option value="FE">a gauche</option>
+                <option value="FF">a droite</option>
+                <option value="FI">bas vers le haut</option>
+           </select>
+
+           <label for="lname">Effet de l'affichage :</label>
+           <select id="select-effetaffichage" name="effetaffichage">
+                <option value="MA">normal et rapide</option>
+                <option value="MB">clignotant et rapide</option>
+           </select>
+
+           <label for="lname">Effet de la duré de l'affichage :</label>
+           <select id="select=dureaffichage" name="dureaffichage">
+                <option value="WA">0,5 seconde</option>
+                <option value="WC">1 seconde</option>
+           </select>
+
+           <label for="lname">Effet de disparition :</label>
+           <select id="select=effetdisparition" name="effetdisparition">
+                <option value="FE">a gauche</option>
+                <option value="FF">a droite</option>
+                <option value="FI">bas vers le haut</option>
+           </select>
+
+
+           <br><input type="button" value="Envoyer">
+
+
+
+           
         </form>
     </section>
 </body>
