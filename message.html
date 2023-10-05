@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8"/>
     
     <link rel="stylesheet" href="style.css"/>
+    
+
     <title>Présentation des journaux luminaux</title>
 </head>
 <body>
     <section id="message">
-        <form>
+        <form method="post" action="rest.php">
+
             <label for="fname">Sélectionner un afficheur :</label>
-            <select name="afficheur">
-                <option value="172.20.21.230">CP A</option>
+            <select name="journal">
+                <option value="172.20.21.158">CP A</option>
                 <option value="172.20.21.231">CP B</option>
                 <option value="172.20.21.232">CE1 A</option>
                 <option value="172.20.21.233">CE1 B</option>
@@ -25,15 +28,15 @@
             
             </select>
            <label for="lname">indiquer le message :</label>
-           <input type="Text" id="lname" name="lname" value=""> 
+           <input type="texte" id="lname" name="texte" value=""> 
 
            <label for="lname">Effet de l'apparation:</label>
-           <select id="select-effetappartion" name="effetappartion">
+           <select id="select-effetapparition" name="effetapparition">
                 <option value="FE">a gauche</option>
                 <option value="FF">a droite</option>
                 <option value="FI">bas vers le haut</option>
            </select>
-
+ 
            <label for="lname">Effet de l'affichage :</label>
            <select id="select-effetaffichage" name="effetaffichage">
                 <option value="MA">normal et rapide</option>
@@ -41,9 +44,11 @@
            </select>
 
            <label for="lname">Effet de la duré de l'affichage :</label>
-           <select id="select=dureaffichage" name="dureaffichage">
+           <select id="select=dureeaffichage" name="dureeaffichage">
                 <option value="WA">0,5 seconde</option>
                 <option value="WC">1 seconde</option>
+                <option value="WD">3 seconde</option>
+                <option value="WU">20 seconde</option>
            </select>
 
            <label for="lname">Effet de disparition :</label>
@@ -54,7 +59,8 @@
            </select>
 
 
-           <br><input type="button" value="Envoyer">
+           <br><input type="submit" value="Envoyer">
+           
 
 
 
